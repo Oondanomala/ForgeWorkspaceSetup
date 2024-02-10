@@ -37,17 +37,9 @@ minecraft {
 }
 
 processResources {
-
     from(sourceSets.main.resources.srcDirs) {
         include 'mcmod.info'
-        expand 'version': project.version,
-        'mod_id': mod_id,
-        'mod_name': mod_name,
-        'mod_author': mod_author,
-        'mod_description': mod_description,
-        'mc_version': mc_version,
-        'mod_version': mod_version,
-        'mod_icon': mod_icon
+        expand 'version': project.version
     }
 
     from(sourceSets.main.resources.srcDirs) {
