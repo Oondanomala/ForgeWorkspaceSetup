@@ -15,6 +15,6 @@ Basic setup for Forge-based mod development workspace. Essentially serves as enn
 If you ended up here, I assume you are already familiar with how to setup basic Forge workspace, so I won't be covering it all in great detail. Only the most important steps, just in case you forgot something:
 
 1. Ensure you have JDK 8 installed (not just JRE), and `JAVA_HOME` environment variable is set in your system, pointing to that JDK;
-2. Download this repository contents ([like this](https://github.com/Aizistral-Studios/ForgeWorkspaceSetup/archive/refs/heads/1.12.2-standalone.zip), for instance), create folder for your mod-specific workspace and unpack those contents into that folder;
-3. Open up a command line in that folder, and execute `gradlew setupDecompWorkspace`. Once it's done, run `gradlew idea`;
+2. Download this repository contents ([like this](https://github.com/Oondanomala/ForgeWorkspaceSetup/archive/refs/heads/1.12.2-standalone.zip), for instance), create folder for your mod-specific workspace and unpack those contents into that folder;
+3. Open up a command line in that folder, and execute `gradlew setupDecompWorkspace`. Once it's done, run `gradlew genIntellijRuns`;
 4. Use `gradlew build` whenever you need to build a `.jar` with your mod. It will end up being in `build/libs` directory within your mod-specific workspace folder.
