@@ -1,20 +1,23 @@
-.git/*
-.gradle/*
-.idea/*
-bin/*
-build/*
-run/*
-minecraft/*
-.apt_generated/*
-.apt_generated_tests/*
-
-.project
-.classpath
-
-*.iml
+# idea
+/.idea/
+out/
 *.ipr
 *.iws
+*.iml
+
+# eclipse
+/eclipse/
+bin/
+.settings/
 *.launch
+.metadata
+.classpath
+.project
 .factorypath
 
-forge*changelog.txt
+# gradle
+/.gradle/
+/build/
+
+# minecraft
+/run/
