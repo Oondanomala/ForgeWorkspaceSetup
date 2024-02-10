@@ -33,7 +33,7 @@ minecraft {
 	runDir = "run"
     
 	replace '@VERSION@', project.version
-	// makeObfSourceJar = false
+	makeObfSourceJar = false
 }
 
 processResources {
@@ -56,19 +56,4 @@ processResources {
 }
 
 dependencies {
-}
-
-task devJar(type: Jar) {
-	classifier = 'dev'
-	from sourceSets.main.output
-}
-
-task sourcesJar(type: Jar) {
-	classifier = 'sources'
-	from sourceSets.main.allSource
-}
-
-artifacts {
-	archives devJar
-	archives sourcesJar
 }
