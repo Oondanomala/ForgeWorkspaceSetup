@@ -21,7 +21,6 @@ repositories {
 	}
 }
 
-apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'net.minecraftforge.gradle.forge'
 
@@ -35,7 +34,7 @@ sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = co
 minecraft {
 	version = "1.12.2-14.23.5.2847"
     mappings = "stable_39"
-	runDir = "eclipse"
+	runDir = "run"
     
 	replace '@VERSION@', project.version
 	// makeObfSourceJar = false
@@ -61,7 +60,6 @@ processResources {
 }
 
 dependencies {
-	compile name: 'Baubles-1.12-1.5.2-dev'
 }
 
 task devJar(type: Jar) {
