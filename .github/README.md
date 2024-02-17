@@ -11,7 +11,7 @@ Basic setup for Forge-based mod development workspace. Essentially serves as enn
 
 ## Short Setup Guide:
 
-If you ended up here, I assume you are already familiar with how to setup basic Forge workspace, so I won't be covering it all in great detail. Only the most important steps, just in case you forgot something:
+If you ended up here, I assume you are already familiar with how to setup a basic Forge workspace, so I won't be covering it all in great detail. Only the most important steps, just in case you forgot something:
 
 1. Ensure you have JDK 8 installed (not just JRE), and `JAVA_HOME` environment variable is set in your system, pointing to that JDK;
 2. Download the template from the [releases tab](https://github.com/Oondanomala/ForgeWorkspaceSetup/releases/latest/download/Template.zip), create a folder for your mod-specific workspace and unpack those contents into that folder;
